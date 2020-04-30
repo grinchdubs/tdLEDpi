@@ -1,6 +1,12 @@
 # tdLEDpi
 Art-net LED interface using Raspberry and Touchdesigner
 
+## Whats Needed
+	* Raspberry Pi 1-3+ wired to network with Ethernet
+	* NeopixeL Led strip
+	* 5v power for the neopixels
+
+
 1. Install Raspbian Lite Latest version and Setup SSH
 	* https://hackernoon.com/raspberry-pi-headless-install-462ccabd75d0
     
