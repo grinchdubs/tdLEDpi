@@ -1,10 +1,11 @@
 # tdLEDpi
-Art-net LED interface using Raspberry and Touchdesigner
+Art-net LED interface using Raspberry for sending DMX information from Touchdesigner
 
 ## Whats Needed
 	* Raspberry Pi 1-3+ wired to network with Ethernet
 	* Neopixel Led strip
 	* 5v power for the neopixels
+	* A computer running Touchdesinger
 
 
 1. Install Raspbian Lite Latest version and Setup SSH
