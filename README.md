@@ -88,6 +88,9 @@ target_127.0.0.1:7890_channel = 0
 	* Open provided TOE
 	* In the DMXout Chop at select universe 1 and add RPi IP address to Network address field
 	
+## Known Issues
+
+	- I havent been able to get this to work with the Raspberry Pi 4 yet. for whatever reason it causes a kernel panic at step number 11 when starting the node.js server
 
 
 
