@@ -86,7 +86,7 @@ target_127.0.0.1:7890_channel = 0
 
 15. Config TD
 	* Open provided TOE
-	* In the DMXout Chop at select universe 1 and add Rpi address to Network address field
+	* In the DMXout Chop at select universe 1 and add RPi IP address to Network address field
 	
 
 
