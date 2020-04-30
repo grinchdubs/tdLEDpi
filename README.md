@@ -81,12 +81,13 @@ target_127.0.0.1:7890_channel = 0
 	* Output = Open Pixel Control
     
 
-14. Config TD
+14. Wire the pi to LED
+![](led_strips_raspi_NeoPixel_powered_bb.jpg)
+
+15. Config TD
 	* Open provided TOE
 	* In the DMXout Chop at select universe 1 and add Rpi address to Network address field
 	
-15. Wire the pi to LED
-![](led_strips_raspi_NeoPixel_powered_bb.jpg)
 
 
 
