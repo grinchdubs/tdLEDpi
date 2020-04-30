@@ -2,7 +2,7 @@
 Art-net LED interface using Raspberry and Touchdesigner
 
 1. Install Raspbian Lite Latest version and Setup SSH
- - https://hackernoon.com/raspberry-pi-headless-install-462ccabd75d0
+ * https://hackernoon.com/raspberry-pi-headless-install-462ccabd75d0
     
 2. Change Password with 
 ```
@@ -27,10 +27,10 @@ sudo vim /etc/hosts
 ```
 sudo raspi-config
 ```
-Advanced > Expand FS
+	* Advanced > Expand FS
 
 6. Update
-Main Menu > Update
+	* Main Menu > Update
 ```
 sudo reboot
 ```
