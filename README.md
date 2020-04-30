@@ -86,7 +86,7 @@ target_127.0.0.1:7890_channel = 0
 	* In the DMXout Chop at select universe 1 and add Rpi address to Network address field
 	
 15. Wire the pi to LED
-
+![](led_strips_raspi_NeoPixel_powered_bb.jpg)
 
 
 
