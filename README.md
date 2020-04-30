@@ -17,7 +17,7 @@ echo /usr/bin/fish | sudo tee -a /etc/shells
 ```
 
 Step 5. Change Hostname
-Change raspberrypi to unique hostname in /etc/hostname and /etc/hosts
+Change `raspberrypi` to unique hostname in /etc/hostname and /etc/hosts
 ```
 sudo vim /etc/hostname
 sudo vim /etc/hosts
