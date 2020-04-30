@@ -3,7 +3,7 @@ Art-net LED interface using Raspberry and Touchdesigner
 
 ## Whats Needed
 	* Raspberry Pi 1-3+ wired to network with Ethernet
-	* NeopixeL Led strip
+	* Neopixel Led strip
 	* 5v power for the neopixels
 
 
