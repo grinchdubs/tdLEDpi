@@ -97,7 +97,12 @@ target_127.0.0.1:7890_channel = 0
 	
 ## How to Use
 ### DMX controller
-The top 3 parameters
+The top 3 parameters will control 1 fixture at a time and control the color of each fixture. In the dmxout format 'Packet Per Sample', this will control 1 pixel at a time. So at the moment you will have to control the color 1 pixel at a time.
+
+The following controls are a bit self explanatory
+
+### TopToDMXMath
+This base comp is partly taken from one of the DMXoutChop snippets and can be used to control what I believe is the whole universe. This I still need to confirm. I have a basic VU going into it that is triggered from an audiofilein.
 
 ## Known Issues
 - I havent been able to get this to work with the Raspberry Pi 4 yet. For whatever reason it causes a kernel panic at step number 11 when starting the node.js server and requires a hard reboot to run any commands.
