@@ -1,11 +1,11 @@
 # tdLEDpi
 Art-net LED interface using Raspberry for sending DMX information from Touchdesigner
 
-## Whats Needed
+## What's Needed
 	- Raspberry Pi 1-3+ wired to network with Ethernet
 	- Neopixel Led strip
 	- 5v power for the neopixels
-	- A computer running Touchdesinger
+	- A computer running latest version of Touchdesinger
 
 
 1. Install Raspbian Lite Latest version and Setup SSH
@@ -47,7 +47,7 @@ sudo reboot
 sudo apt-get install -y python3-pip
 ```
 
-8. Install need Python Libs
+8. Install needed Python Libs
 ```
 sudo pip3 install rpi_ws281x adafruit-circuitpython-neopixel
 			or
@@ -95,6 +95,10 @@ target_127.0.0.1:7890_channel = 0
 	* Open provided TOE
 	* In the DMXout Chop at select universe 1 and add RPi IP address to Network address field
 	
+## How to Use
+### DMX controller
+The top 3 parameters
+
 ## Known Issues
 - I havent been able to get this to work with the Raspberry Pi 4 yet. For whatever reason it causes a kernel panic at step number 11 when starting the node.js server and requires a hard reboot to run any commands.
 
