@@ -96,6 +96,10 @@ target_127.0.0.1:7890_channel = 0
 	* In the DMXout Chop at select universe 1 and add RPi IP address to Network address field
 	
 ## How to Use
+
+### Number of LEDs
+At the moment this setup will control 100 LED's with the default config. To change the number of LED's being controlled modify the 'index.js' script in the folder 'node_modules/node-opc-server/opc-server'. on the 5th libe down you will find the NUM_LED line, change the values at the end of the line to reflect the amoung of LED's you would like to control.
+
 ### DMX controller
 The top 3 parameters will control 1 fixture at a time and control the color of each fixture. In the dmxout format 'Packet Per Sample', this will control 1 pixel at a time. So at the moment you will have to control the color 1 pixel at a time.
 
