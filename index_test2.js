@@ -4,7 +4,7 @@
 
 var receivedDataCount = 0;
 var ws281x = require('rpi-ws281x-native');
-var NUM_LEDS = parseInt(process.argv[2], 544) || 544;
+var NUM_LEDS = parseInt(process.argv[2], 600) || 600;
 var pixelsUint32 = new Uint32Array(NUM_LEDS);
 ws281x.init(NUM_LEDS);
 var GAMMA_CORRECT = true;
@@ -20,6 +20,7 @@ process.on('SIGINT', function () {
 var opcparse = require('../opcparse.js');
 
 
+// Universe 1
 var net = require('net');
 var server1 = net.createServer(function(c) { //'connection' listener
   var parseState = 0;
@@ -28,6 +29,7 @@ var server1 = net.createServer(function(c) { //'connection' listener
     console.log('client disconnected');
   });
   c.on('data', function(data) {
+    // Starting Pixel in Universe 1
     var offset = 0;
     opcparse.parseOPC(data, function(rgb, count) {
 // console.log('rgb count', count);
@@ -44,6 +46,7 @@ var server1 = net.createServer(function(c) { //'connection' listener
 });
 
 
+// Universe 2
 server1.listen(7890, function() { //'listening' listener
   console.log('server bound');
 });
@@ -56,7 +59,8 @@ var server2 = net.createServer(function(c) { //'connection' listener
     console.log('client disconnected');
   });
   c.on('data', function(data) {
-    var offset = 136;
+    // Starting Pixel in Universe 2
+    var offset = 171;
     opcparse.parseOPC(data, function(rgb, count) {
 // console.log('rgb count', count);
       for (var i = 0; i < count; i+=3) {
@@ -77,6 +81,7 @@ server2.listen(7891, function() { //'listening' listener
 });
 
 
+// Universe 3
 var server3 = net.createServer(function(c) { //'connection' listener
   var parseState = 0;
   console.log('client connected');
@@ -84,6 +89,7 @@ var server3 = net.createServer(function(c) { //'connection' listener
     console.log('client disconnected');
   });
   c.on('data', function(data) {
+    // Starting Pixel in Universe 3
     var offset = 272;
     opcparse.parseOPC(data, function(rgb, count) {
 // console.log('rgb count', count);
@@ -105,6 +111,7 @@ server3.listen(7892, function() { //'listening' listener
 });
 
 
+// Universe 4
 var server4 = net.createServer(function(c) { //'connection' listener
   var parseState = 0;
   console.log('client connected');
@@ -112,6 +119,7 @@ var server4 = net.createServer(function(c) { //'connection' listener
     console.log('client disconnected');
   });
   c.on('data', function(data) {
+    // Starting Pixel in Universe 4
     var offset = 408;
     opcparse.parseOPC(data, function(rgb, count) {
 // console.log('rgb count', count);
