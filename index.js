@@ -16,6 +16,7 @@ process.on('SIGINT', function () {
 
 var opcparse = require('../opcparse.js');
 
+// Universe 1
 var net = require('net');
 var server1 = net.createServer(function(c) { //'connection' listener
   var parseState = 0;
@@ -43,6 +44,7 @@ server1.listen(7890, function() { //'listening' listener
   console.log('server bound');
 });
 
+// Universe 2
 var server2 = net.createServer(function(c) { //'connection' listener
   var parseState = 0;
   console.log('client connected');
@@ -50,7 +52,8 @@ var server2 = net.createServer(function(c) { //'connection' listener
     console.log('client disconnected');
   });
   c.on('data', function(data) {
-    var offset = 170;
+    // Starting Pixel in Universe 2
+    var offset = 171;
     opcparse.parseOPC(data, function(rgb, count) {
 // console.log('rgb count', count);
       for (var i = 0; i < count; i+=3) {
@@ -69,6 +72,7 @@ server2.listen(7891, function() { //'listening' listener
   console.log('server bound');
 });
 
+// Universe 3
 var server3 = net.createServer(function(c) { //'connection' listener
   var parseState = 0;
   console.log('client connected');
@@ -76,6 +80,7 @@ var server3 = net.createServer(function(c) { //'connection' listener
     console.log('client disconnected');
   });
   c.on('data', function(data) {
+  	// Starting Pixel in Universe 3
     var offset = 272;
     opcparse.parseOPC(data, function(rgb, count) {
 // console.log('rgb count', count);
@@ -95,6 +100,7 @@ server3.listen(7892, function() { //'listening' listener
   console.log('server bound');
 });
 
+// Universe 4
 var server4 = net.createServer(function(c) { //'connection' listener
   var parseState = 0;
   console.log('client connected');
@@ -102,6 +108,7 @@ var server4 = net.createServer(function(c) { //'connection' listener
     console.log('client disconnected');
   });
   c.on('data', function(data) {
+  	// Starting Pixel in Universe 4
     var offset = 408;
     opcparse.parseOPC(data, function(rgb, count) {
 // console.log('rgb count', count);
@@ -120,6 +127,7 @@ var server4 = net.createServer(function(c) { //'connection' listener
 server4.listen(7893, function() { //'listening' listener
   console.log('server bound');
 });
+
 
 // gamma = 2.2
 var GammaLUT=new Uint8Array([0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,8,8,8,9,9,9,10,10,10,11,11,11,12,12,13,$
