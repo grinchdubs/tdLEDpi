@@ -45,13 +45,12 @@ var server1 = net.createServer(function(c) { //'connection' listener
   });
 });
 
-
-// Universe 2
 server1.listen(7890, function() { //'listening' listener
   console.log('server bound');
 });
 
 
+// Universe 2
 var server2 = net.createServer(function(c) { //'connection' listener
   var parseState = 0;
   console.log('client connected');
