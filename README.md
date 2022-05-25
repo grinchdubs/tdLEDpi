@@ -49,7 +49,7 @@ sudo apt-get install -y python3-pip
 
 8. Install needed Python Libs
 ```
-sudo pip3 install rpi_ws281x adafruit-circuitpython-neopixel
+sudo pip3 install -y rpi_ws281x adafruit-circuitpython-neopixel  
 			or
 sudo python3 -m pip install --force-reinstall adafruit-blinka
 ```
@@ -62,7 +62,7 @@ sudo apt-get install -y ola
 10. Install node/npm
 ```
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt install nodejs
+sudo apt install -y nodejs
 ```
     
 11. Install OPC
