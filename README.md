@@ -49,7 +49,7 @@ sudo apt-get install -y python3-pip
 
 8. Install needed Python Libs
 ```
-sudo pip3 install -y rpi_ws281x adafruit-circuitpython-neopixel  
+sudo pip3 install rpi_ws281x adafruit-circuitpython-neopixel  
 			or
 sudo python3 -m pip install --force-reinstall adafruit-blinka
 ```
