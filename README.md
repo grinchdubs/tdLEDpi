@@ -61,7 +61,7 @@ sudo apt-get install -y ola
 
 10. Install node/npm
 ```
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt install -y nodejs
 ```
     
